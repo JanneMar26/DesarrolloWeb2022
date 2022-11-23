@@ -43,7 +43,7 @@
         Define la información de contacto del autor/propietario 
         de un documento u artículo. <br>
             Ejemplo: <br>
-            <p><address>Escrito por Janne</address></p>
+            <p>Escrito por <a href="https://github.com/JanneMar26">JanneMar26</a> </p>
         
             </li>
 
@@ -53,35 +53,111 @@
                 del sitio. <br>
                 Fuentes potenciales para el elemento article: <br>
                     <ul>
-                    Publicación en el foro <br>
-                    Entrada en el blog  <br>
-                    Noticia <br>
+                    <li>Publicación en el foro</li>
+                    <li>Entrada en el blog</li>   
+                    <li>Noticia</li>
                     </ul>
                 <b> NOTA: </b> &lt;article> no se muestra como algo especial en un navegaror.Sin embargo, puede usar CSS para 
                     darle diseño <br>
-                    <p><address>1_etiquetas\example\article.html </address></p>
+
+                    <a href="etiquetas/example/article.html">Ejemplo article con css</a>
                 
             </li>
 
             <li>            
                 <h3>&lt;aside></h3>
                 Define algún contenido además del contenido en el que se coloca. El contenido aparte debe estar indirectamente relacionado con el continuido circulante.
-                Sugerencia:aside se coloca a menudo como una barra lateral en un documento.
-                Nota: Este elemento no se muestra como algo especial en el navegador. Sin embargo, puede
-                usar CSS paradiseñar el aside.
-                    <p><aside>1_etiquetas\example\aside.html</aside></p>
+                <b>Sugerencia: </b> aside se coloca a menudo como una barra lateral en un documento.
+                <b>Nota: </b>  Este elemento no se muestra como algo especial en el navegador. Sin embargo, puede
+                usar CSS paradiseñar el aside. <br>
+                
+                <a href="etiquetas/example/aside.html" >Ejemplo aside con css </a>
                 
             </li>
 
             <li>            
                 <h3>&lt;audio></h3>
-                Agrega controles de audio, como reproducción, pausa y volumen.
-                El &lt;source> permite especificar archivos de audio alternativos entro los que puede elegir el
+                Agrega controles de audio, como reproducción, pausa y volumen. El &lt;source> permite especificar archivos de audio alternativos entro los que puede elegir el
                 navegador. <br>
+                <br>
                     Ejemplo:    <br>
-                    <p><audio>etiquetas\audio\teclado-mecanografia.mp3</audio></p>
+                    <audio controls> 
+                        <source src="etiquetas/audio/teclado-mecanografia.mp3">
+                    </audio>
                 
             </li>
+
+            <li>            
+                <h3>&lt;button></h3>
+                Define un botón en el que es puede hacer clic.
+                Dentro de un &lt;button> puedes poner texto (y etiquteas como &lt;i>,&lt;b>,&lt;strong>,&lt;img>, etc ). !Eso no es
+                posible con un botón creado con el &lt;input> <br>
+                <b> Sugerencia:</b> Especifique siembre el type de un &lt;button>, para indicar a los navegadores qué tipo de botón
+                es. <br>
+                <b> Consejo:   Puede diseñar botones facilmente con CSS</b> <br>
+                <br>                
+                    Ejemplo:    <br>
+                    <br>
+                    <button type="submit">Botón 1</button>
+                    <button type="submit">Botón 2</button>
+            </li>
+
+            <li>            
+                <h3>&lt;form></h3>
+                Es un contenedor para diferentes tipo de elementos de entrada, como: campos de texto, casillas de
+                verificación, botones de opción, botonees de envío, etc.<br>
+                <ul>
+                    <li>
+                        &lt;input type="text"> <br>
+
+                        Muestra un campo de entrada de texto de una solo linea <br>
+                        <input type="text">
+                    </li>
+                    <br>
+                    <li>
+                        &lt;input type="radio"> <br>
+                        
+                        Muestra un botón de radio(para selecionar una de muchas opciones) <br>
+                        <input type="radio">
+                        <input type="radio">
+                        <input type="radio">
+                    </li>
+                    <br>
+                    <li>
+                        &lt;input type="checkbox"> <br>
+                        
+                        Muestra una casilla de verificación(para selecionar cero o más opciónes) <br>
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </li>
+                    <br>
+                    <li>
+                        &lt;input type="submit"> <br>
+                        
+                        Muestra un botón de envio(para enviar el formulario) <br>
+                        <input type="submit">
+                    </li>
+                    <br>
+                    <li>
+                        &lt;input type="button"> <br>
+                        Muestra un botón en el que se puede hacer clic <br>
+                        <input type="button">
+                    </li>
+                    </ul>
+            
+                    <li>            
+                        <h3>&lt;footer></h3>
+                        Define un pie de página para un documento o sección <br>
+                        Normalmente contien:
+                        Información de autoría
+                        Información de registro
+                        Información del contacto
+                        Mapa del sitio
+                        Volver a los enlaces superiores
+                        Documentos relacionados
+                    </li>
+                
+            
         </ol>
     </p>
 </body>
