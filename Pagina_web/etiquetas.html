@@ -9,8 +9,20 @@
     <!--Nombre que aparece en la pestaña-->
     <title>Document</title>
     <style>
+        
         h3{
             color: blueviolet;
+        }
+        h2{
+            color: coral;
+        }
+
+        button{
+            color: white;
+            background-color:#4CAF50 ;
+            border: none;
+            font-size: 16px;
+            padding: 15px 32px;
         }
     </style>
 </head>
@@ -98,7 +110,7 @@
                 <br>                
                     Ejemplo:    <br>
                     <br>
-                    <button type="submit">Botón 1</button>
+                    <button style="background-color:#008CBA ;" type="submit">Botón 1</button>
                     <button type="submit">Botón 2</button>
             </li>
 
@@ -147,16 +159,118 @@
             
                     <li>            
                         <h3>&lt;footer></h3>
-                        Define un pie de página para un documento o sección <br>
-                        Normalmente contien:
-                        Información de autoría
-                        Información de registro
-                        Información del contacto
-                        Mapa del sitio
-                        Volver a los enlaces superiores
-                        Documentos relacionados
+                        <p> Define un pie de página para un documento o sección <br>
+                        Normalmente contienen:</p>
+                        <ul>
+                        <li> Información de autoría</li> 
+                        <li>Información de registro </li> 
+                        <li> Información del contacto</li>
+                        <li> Mapa del sitio</li>
+                        <li> Volver a los enlaces superiores</li>
+                        <li> Documentos relacionados</li>
+                        </ul>
+                        <br>
+                        <a href="etiquetas/example/footer.html">Ejemplo footer</a>
                     </li>
                 
+                    <li>            
+                        <h3>&lt;header</h3>
+                        <p> Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación.
+                            Normalmente contiene: </p> <br>
+                            <ul>
+                            <li>Uno a más elementos de encabezado (&lt;h1> - &lt;h6>)</li>
+                            <li> Logotipo o icono</li>
+                            <li> información de autoría</li>
+                            </ul>
+                            <b>NOTA: </b> Puede tener varios &lt;header> en un documento HTML. Sin embargo, no sepuede colocar
+                                dentro de un &lt;footer>, &lt;address> u otro &lt;header>
+                                
+                            Ejemplo: <br>
+                            <header>
+                            <h1>Encabezado de la página principal aquí</h1>
+                            <p> Publicado el 17/08/2022 </p>
+                            </header>
+
+                    </li> 
+
+                    <li>            
+                        <h3>&lt;hgroup></h3>
+                        <p> Generalmente se usa para agrupar un conjunto d euno o más elementos &lt;h1> - &lt;h6>, para agrupar,
+                            por ejemplo, un titulo de sección y un subtitulo adjunto. </p> <br>
+                            <a href="etiquetas/example/hgroup.html"></a>
+                            
+                        
+                    </li>
+
+                    <li>            
+                        <h3>&lt;h1> - &lt;h6></h3>
+                        <p> Se utilizan para definir encabezados HTML. <br>
+                            Ejemplo: </p> <br>
+                            <h1 style="background-color: blue; type="submit"> Hola Mundo!</h1>
+                            <h2 >Hola Mundo! </h2>
+                    </li>
+
+                    <li>            
+                        <h3>&lt;img></h3>
+                        <p> Se utiliza para incrustar una imagen en una página HTML.
+                            Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas
+                            web. La etiqueta &lt;ima> crea n espacio de espera para la imagen de referencia.
+                            Tiene atributos obligatorios:
+                            <ul>
+                                <li>src: especifica la ruta a la imagen</li>
+                                <li>alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede
+                                    mostrar</li>
+                            </ul>
+                            <a href="etiquetas/example/img.html"></a>
+                    </li>
+                    
+                    <li>            
+                        <h3>&lt;map></h3>
+                        <p> Se utiliza para definir un mapa de imagen, es una imagen con áreas en las que se puede hacer clic.
+                            El atributo de nombre requerido del &lt;map> esta asocioado con el atributo usemap de &lt;img>
+                            y crea una relación entre la imagen y el mapa.<br>
+                            <a href="etiquetas/example/map.html">Ejemplo map</a>
+                    </li>
+
+                    <li>            
+                        <h3>&lt;nav></h3>
+                        <p> Define un conjunto de enlaces de navegación.
+                            Tenga en cuenta que NO todos los enlaces de un documento deben estar dentro de un &lt;nav>. Este
+                            elemento está destinado solo para el bloque principal de enlaces de navegación.<br>
+                            Ejemplo:
+                            <nav>
+                                <a href="https://www.google.com/">google</a> 
+                                <a href="https://www.youtube.com">youtube</a>
+                                <a href="https://github.com/">github</a>
+                                <a href="https://alfonso6z.com/modulos">edc</a>
+                                
+                            </nav>
+
+                    </li>
+
+                    <li>            
+                        <h3>&lt;p></h3>
+                        <p> Define un párrafo.
+                            Los navegadores agregan automáticamente una línea en blanco antes y después de cada &lt;p> </p><br>
+                            <a href="etiquetas/example/p.html"> Ejemplo p</a>
+                    </li>
+
+                    <li>            
+                        <h3>&lt;script></h3>
+                        <p> Se utiliza para incrustar un script del lado del cliente <b> JavaScript</b>
+                            Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos
+                            externos a
+                            través del atributo <b> src</b>
+                            Los usus comunes de <b> JavaScript</b> son manipulación de imágenes, la validación de formularios y
+                            los
+                            cambis dinámicos de contenido.
+                            <b> Nota:</b> cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la
+                            información de la hoja de estilo. Si se han definido algunas propiedades para el mismo selector
+                            (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída
+                            (consulte el
+                            ejemplo a continuación).</p><br>
+                            <a href="etiquetas/example/p.html"> Ejemplo p</a>
+                    </li>
             
         </ol>
     </p>
