@@ -55,7 +55,7 @@
         Define la información de contacto del autor/propietario 
         de un documento u artículo. <br>
             Ejemplo: <br>
-            <p>Escrito por <a href="https://github.com/JanneMar26">JanneMar26</a> </p>
+            <address>Escrito por <a href="https://github.com/JanneMar26">JanneMar26</a> </address>
         
             </li>
 
@@ -69,9 +69,10 @@
                     <li>Entrada en el blog</li>   
                     <li>Noticia</li>
                     </ul>
+                    <br>
                 <b> NOTA: </b> &lt;article> no se muestra como algo especial en un navegaror.Sin embargo, puede usar CSS para 
                     darle diseño <br>
-
+                    <br>
                     <a href="etiquetas/example/article.html">Ejemplo article con css</a>
                 
             </li>
@@ -182,6 +183,7 @@
                             <li> Logotipo o icono</li>
                             <li> información de autoría</li>
                             </ul>
+                            <br>
                             <b>NOTA: </b> Puede tener varios &lt;header> en un documento HTML. Sin embargo, no sepuede colocar
                                 dentro de un &lt;footer>, &lt;address> u otro &lt;header>
                                 
@@ -217,9 +219,9 @@
                             web. La etiqueta &lt;ima> crea n espacio de espera para la imagen de referencia.
                             Tiene atributos obligatorios:
                             <ul>
-                                <li>src: especifica la ruta a la imagen</li>
-                                <li>alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede
-                                    mostrar</li>
+                            <li>src: especifica la ruta a la imagen</li>
+                            <li>alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede
+                            mostrar</li>
                             </ul>
                             <a href="etiquetas/example/img.html"></a>
                     </li>
@@ -239,11 +241,12 @@
                             elemento está destinado solo para el bloque principal de enlaces de navegación.<br>
                             Ejemplo:
                             <nav>
-                                <a href="https://www.google.com/">google</a> 
-                                <a href="https://www.youtube.com">youtube</a>
-                                <a href="https://github.com/">github</a>
-                                <a href="https://alfonso6z.com/modulos">edc</a>
-                                
+                            |
+                                <a href="https://www.google.com/">google</a> |                                
+                                <a href="https://www.youtube.com">youtube</a> |
+                                <a href="https://github.com/">github</a> |
+                                <a href="https://alfonso6z.com/modulos">edc</a> | 
+                            
                             </nav>
 
                     </li>
@@ -251,28 +254,37 @@
                     <li>            
                         <h3>&lt;p></h3>
                         <p> Define un párrafo.
-                            Los navegadores agregan automáticamente una línea en blanco antes y después de cada &lt;p> </p><br>
-                            <a href="etiquetas/example/p.html"> Ejemplo p</a>
+                        Los navegadores agregan automáticamente una línea en blanco antes y después de cada &lt;p> </p><br>
+                        <a href="etiquetas/example/p.html"> Ejemplo p</a>
                     </li>
 
                     <li>            
                         <h3>&lt;script></h3>
                         <p> Se utiliza para incrustar un script del lado del cliente <b> JavaScript</b>
-                            Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos
-                            externos a
-                            través del atributo <b> src</b>
-                            Los usus comunes de <b> JavaScript</b> son manipulación de imágenes, la validación de formularios y
-                            los
-                            cambis dinámicos de contenido.
-                            <b> Nota:</b> cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la
-                            información de la hoja de estilo. Si se han definido algunas propiedades para el mismo selector
-                            (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída
-                            (consulte el
-                            ejemplo a continuación).</p><br>
-                            <a href="etiquetas/example/p.html"> Ejemplo p</a>
+                        Contiene declaraciones de secuencias de comandos o apunta a un archivo de secuencia de comandos
+                        externos a través del atributo <b> src.</b> <br>
+                        Los usos comunes de <b> JavaScript</b> son manipulación de imágenes, la validación de formularios y
+                        los cambios dinámicos de contenido.
+                        <address> <b> Nota:</b> cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la
+                        información de la hoja de estilo. Si se han definido algunas propiedades para el mismo selector
+                        (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída
+                        (consulte el ejemplo a continuación).</address><br>
+                        <a href="etiquetas/example/script.html"> Ejemplo p</a>
+                    </li>
+
+                    <li>            
+                        <h3>&lt;style></h3>
+                        <p> Se utiliza para definir la información de estilo <b>CSS</b> de un documento.
+                        Dentro de &lt;style>, especifica cómo deben mostrarse los elementos HTML en un navegador. <br>
+                        Ejemplo</p><br>
+                            
                     </li>
             
-        </ol>
+                    <li>            
+                        <h3>&lt;section></h3>
+                        <p> Define una sección en un documento </p>
+                        <a href="etiquetas/example/section.html">Ejemplo section</a>
+                    </li>
     </p>
 </body>
 </html>
