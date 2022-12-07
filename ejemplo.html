@@ -5,48 +5,86 @@
     
     <style>
         
-        header{
+        header,section,article,aside,footer{
+
+            margin:5px ;
             text-align: center;
             font-size: large;
+<<<<<<< HEAD
             background-color: #acdaae;
+=======
+            /*background-color: #E8F2A1;*/
+>>>>>>> 735086f96345ae555ea6a6a3c58c8b3484a0fdab
             border: solid black 1px;
             border-radius: 15px;
 
         }
+        div{
+            display: flex;
 
+        }
+        
         section{
+<<<<<<< HEAD
             text-align: left;
             font-size: large;
             background-color: #f7d2ef;
+=======
+            width: 20%;
+            text-align: center;
+            font-size: large;
+            background-color: #F7D1D5;
+            border: solid black 1px;
+            border-radius: 15px;
+        }
+/*
+        article{
+            text-align: center;
+            font-size: large;
+            background-color: #F7D1D5;
+>>>>>>> 735086f96345ae555ea6a6a3c58c8b3484a0fdab
             border: solid black 1px;
             border-radius: 15px;
 
         }
+
+
         aside{
             text-align: center;
             font-size: large;
+<<<<<<< HEAD
             background-color:#f7d2ef;
+=======
+            background-color: #DEDCE6;
+>>>>>>> 735086f96345ae555ea6a6a3c58c8b3484a0fdab
             border: solid black 1px;
             border-radius: 15px;
 
         }
+<<<<<<< HEAD
 
         footer{
             text-align: center;
             font-size: large;
             background-color:#9ea7fc;
+=======
+        footer{
+            text-align: center;
+            font-size: large;
+            background-color:#CEF2FF;
+>>>>>>> 735086f96345ae555ea6a6a3c58c8b3484a0fdab
             border: solid black 1px;
             border-radius: 15px;
 
         }
 
-
+*/
     </style>
 
     <title>Ejemplo</title>
 </head>
 <body>
-    <header>
+    <header style="background-color: #E8F2A1;">
         <h1>
             Título del encabezado
         </h1>
@@ -55,35 +93,36 @@
 
     </header>
 
-    <section>
-        <ul>
-            <li> Elemento 1</li>
-            <li> Elemento 2</li>
-            <li> Elemento 3</li>
-            <li> Elemento 4</li>
-            <li> Elemento 5</li>
-            <li> Elemento 6</li>
-        </ul>
-    </section>
-    <section>
-        <article> 
-            <h2>Título del artículo 1</h2>
-            <p>Texto del artículo 1</p>
-            
-        </article>
+    <div>
+        
+        <section style="background-color:#F7D1D5  ;">
+            <ul>
+                <li> Elemento 1</li>
+                <li> Elemento 2</li>
+                <li> Elemento 3</li>
+                <li> Elemento 4</li>
+                <li> Elemento 5</li>
+                <li> Elemento 6</li>
+            </ul>
+        </section>
+        <section style="width:40% ; background-color:#FFF5CE;">
+            <article>
+                <h2>Título del artículo 1</h2>
+                <p>Texto del artículo 1</p>
+        
+            </article>
+            <article>
+                <h2>Título del artículo 2</h2>
+                <p>Texto del artículo 2</p>
+            </article>
+        </section>
+        <aside style="width: 40%; background-color: #DEDCE6;">
+            <h1> Título del Aside</h1>
+            <p>Contenido del Aside</p>
+        </aside>
+    </div>
 
-        <article> 
-            <h2>Título del artículo 2</h2>
-            <p>Texto del artículo 2</p>
-        </article>
-    </section>
-
-    <aside>
-        <h1> Título del Aside</h1>
-        <p>Contenido del Aside</p>
-    </aside>
-
-    <footer>
+    <footer style="background-color:#CEF2FF;" >
         <p>Texto de pie de página</p>
     </footer>
     
