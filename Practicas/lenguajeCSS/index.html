@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    
 
 
     <title>Lenguaje CSS</title>
     
     <style>
+        /*http://codepen.io/alfonso6z/pen/zYaXNww?editors=1100*/
         header{
             padding-left: 30px;
             border-bottom: solid 1.5px #D3D3D3;
@@ -36,22 +39,46 @@
             height: 380px;
         }
 
+
+        .ggrid{
+            display: grid; 
+            width: 800px;
+            height: 250px; 
+            margin-left: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+
+        }
         .l1{
-            color: aliceblue;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 50;
+            grid-column: 1 / 4;
+            grid-row: 1;
             font-size: 50px;
 
         }
         .l2{
-            color: bisque;
+
+            grid-column: 2/3;
+            grid-row: 2;
+            font-size: 30px;
+            text-align: right;
+            text-align: center;
+            margin-top: 15px;
+            
+
         }
         .l3{
-            color: aliceblue;
+            grid-column: 3/4;
+            grid-row: 2/4;
+            font-size:70px;
+            
+            
         }
         .l4{
-            color: #002E29;
+            grid-column: 3/4;
+            grid-row: 4;
+            font-size: 30px
             
+
         }
 
 
@@ -102,14 +129,12 @@
     <section class="imgCDMX">
         <div> <img src="img/hero-vector.svg" class= "vector" alt=""></div>
         
-        <h1>
-
-            <p class="l1"> APRENDE A PROGRAMAR </p>
-            <p class="l2"> EN LAS </p>
-            <p class="l3"> ESCUELAS DE CODIGO </p>
-            <p class="l4"> DE LA CDMX </p>
-        </h1>
-
+        <div class="ggrid">
+            <div class="l1"> <b> APRENDE A PROGRAMAR</b></div>
+            <div class="l2"> EN LAS</div>
+            <div class="l3"> <b> ESCUELAS<br>DE CODIGO</b></div>
+            <div class="l4"> DE LA CDMX</div>
+        </div>
     </section>
 
     <footer>
