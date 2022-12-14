@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+
+
+    <title>Lenguaje CSS</title>
+    
+    <style>
+        /*http://codepen.io/alfonso6z/pen/zYaXNww?editors=1100*/
+        header{
+            padding-left: 30px;
+            border-bottom: solid 1.5px #D3D3D3;
+        }
+        nav{
+            
+            padding-left: 60%;
+            margin-top: 20px;
+            text-decoration: none;
+            color:#104C42 ;
+        }
+        a{
+            
+            padding-left: 20px;
+            text-decoration: none;
+            color:#104C42 ;
+
+        }
+        a:hover{
+            
+
+            text-decoration: underline;
+            color: #002E29;
+        }
+
+        .imgCDMX{
+            background:url(img/CDMX.jpg) 100%/cover no-repeat ;
+            height: 380px;
+        }
+
+
+        .ggrid{
+            display: grid; 
+            width: 800px;
+            height: 250px; 
+            margin-left: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+
+        }
+        .l1{
+            grid-column: 1 / 4;
+            grid-row: 1;
+            font-size: 50px;
+
+        }
+        .l2{
+
+            grid-column: 2/3;
+            grid-row: 2;
+            font-size: 30px;
+            text-align: right;
+            text-align: center;
+            margin-top: 15px;
+            
+
+        }
+        .l3{
+            grid-column: 3/4;
+            grid-row: 2/4;
+            font-size:70px;
+            
+            
+        }
+        .l4{
+            grid-column: 3/4;
+            grid-row: 4;
+            font-size: 30px
+            
+
+        }
+
+
+        h1{
+            color:white ;
+
+        }
+        footer{
+            text-align: center;
+        }
+        section {
+            margin-top: 15px;
+            display: flex;
+            padding: 100px 0px 0px 300px;
+
+        }
+        .vector{
+            width: 40px;
+            
+            
+            
+        }
+        h2{
+            color: #B08F5C ;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+    <img src="img/logo.svg" alt="">
+    </div>
+
+    <header>
+
+    </header>
+
+    
+<nav>
+    <a href="https://cdmx.gob.mx/">Residentes</a>
+    <a href="https://siapem.cdmx.gob.mx/">Negocios</a>
+    <a href="https://mexicocity.cdmx.gob.mx/">Visitantes</a>
+    <a href="https://gobierno.cdmx.gob.mx/">Gobierno</a>
+</nav>
+
+    
+    <section class="imgCDMX">
+        <div> <img src="img/hero-vector.svg" class= "vector" alt=""></div>
+        
+        <div class="ggrid">
+            <div class="l1"> <b> APRENDE A PROGRAMAR</b></div>
+            <div class="l2"> EN LAS</div>
+            <div class="l3"> <b> ESCUELAS<br>DE CODIGO</b></div>
+            <div class="l4"> DE LA CDMX</div>
+        </div>
+    </section>
+
+    <footer>
+        
+        <h2>¿Quién se puede inscribir?</h2>
+        <b>Cualquier persona que quiera aprender a programar código y cuente con 4-8 horas disponibles a la semana</b> <br>
+
+        *Menores de edad deberán entrar a las instalaciones acompañados de un adulto </p>
+    </footer>
+</body>
+</html>
