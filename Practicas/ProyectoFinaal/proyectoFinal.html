@@ -4,7 +4,9 @@
     <title>Proyecto final</title>
 
     <style>
-
+        .titulos{
+            font-size: 40px;
+        }
         section{
             background-color: #016241;
             color: white;
@@ -14,57 +16,108 @@
         article{
             background-color: #D40032;
             color: white;
+            display: flex;
             text-align: center;
         }
+
+        button{
+            border: solid black 1.5px;
+            border-radius: 25px;
+            padding: 5px;
+            background-color:transparent;
+        }
+
+        .btnInicio:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+            
+        }
+
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .botones{
+            padding-left: 30px;
+            margin-right: 30px;
+        }
+        .btnArticle{
+            background-color:#D40032;
+            color: white;
+            border-radius: 25px;
+            border: solid white;
+        }
+        .btnArticle:hover{
+            background-color:white;
+            color: #D40032;
+        }
+        
     </style>
 
 
 </head>
 <body>
-    <div> 
+    <div class="menu"> 
         <nav>
             <img style="height: 25px;" src="img/pngwing.com.png" alt="">
             <a href="https://matadornetwork.com/es/alebrijes-en-oaxaca-en-busqueda/">ARTE</a>
             <a href="https://matadornetwork.com/es/alebrijes-en-oaxaca-en-busqueda/">COLECCIONES</a>
             <a href="https://matadornetwork.com/es/alebrijes-en-oaxaca-en-busqueda/">CONÓCENOS</a>
         </nav>
+        <div class="botones">
+        <button class ="btnInicio" style="margin-right:15px ;"> Inicia sesión </button>
+
+        <button class ="btnInicio"> Registrarse </button>
+        </div>
     </div>
     
-    <button> Inicia sesión </button>
-    <button> Registrarse </button>
 
 
     <section>
-        <h1 whid 100%> UNA EXPERIENCIA TOTALMENTE NUEVA EN EL ARTE</h1>
+        <h1 class="titulos" style="width: 100%;"> UNA EXPERIENCIA <br> TOTALMENTE NUEVA <br>
+            EN EL ARTE</h1>
     
         <p>Una tradición milenaria nos ha acompañado a través der todo <br>
         este tiempo <a href="https://matadornetwork.com/es/alebrijes-en-oaxaca-en-busqueda/">Aprende más...</a>  </p>
     </section>
 
     <article>
-        <img style="height: 250px;" src="img/alebrijes-en-oaxaca-940x626.jpg" alt="">
-        <div>
-            <h2>ALEBRIJES MEXICANOS </h2>
-            <p>
-            Tallados en madera cumplen con las más <br>
-            altas exigencias en diseño. <br>
-            <button>Has tu pedido</button>
-            </p>
+        <div style="width:50%;">
+            <img style="width: 100%;" src="img/alebrijes-en-oaxaca-940x626.jpg" alt="">
         </div>
+        <div style="width:50%;">
+            <h2 class="titulos">ALEBRIJES <br>
+                MEXICANOS </h2>
+            <p> Tallados en madera cumplen con las más <br>
+                    altas exigencias en diseño. <br></p>
+            <button class ="btnArticle">Has tu pedido</button>
+        </div>
+                    
     </article>
 
+
     <article>
-    
-    <div>
-        <h2>    CREATIVIDAD E IMAGINACIÓN </h2>
-        <p>
-            Un sueño hecho realidad. <br>
-            <button>Has tu pedido</button>
-        </p>
-    </div>
-        <img src="img/alebrijes-en-oaxaca-940x626.jpg" alt="">
-    
+
+        <div style="width:50%;">
+            <h2 class="titulos">CREATIVIDAD E <br>
+                IMAGINACIÓN </h2>
+            <p> Un sueño hecho realidad.</p>
+            <button class ="btnArticle" >Has tu pedido</button>
+        </div>
+        <div style="width:50%;">
+            <img style="width: 100%;" src="img/VOCES-HOME-.jpg" alt="">
+        </div>            
     </article>
+            
+
 
     <footer>
     
